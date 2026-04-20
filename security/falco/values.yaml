@@ -1,0 +1,13 @@
+# Helm values for Falco
+# Chart: falcosecurity/falco
+# Repo:  https://falcosecurity.github.io/charts
+
+driver:
+  kind: modern_ebpf
+
+falcosidekick:
+  enabled: false
+
+collectors:
+  kubernetes:
+    enabled: true
