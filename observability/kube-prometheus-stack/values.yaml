@@ -1,0 +1,17 @@
+# Helm values for kube-prometheus-stack
+# Chart: prometheus-community/kube-prometheus-stack
+
+grafana:
+  ingress:
+    enabled: true
+    ingressClassName: nginx
+    hosts:
+      - grafana.seancloud.org
+    paths:
+      - /
+
+  adminPassword: "changeme"  # change this after first login
+
+prometheus:
+  prometheusSpec:
+    retention: 7d
