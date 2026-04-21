@@ -10,7 +10,6 @@ grafana:
     paths:
       - /
 
-  adminPassword: "changeme"  # change this after first login
 
 prometheus:
   prometheusSpec:
